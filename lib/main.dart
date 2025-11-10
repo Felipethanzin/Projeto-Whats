@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Thanzin_AimboT',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -16,26 +16,21 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
           child: Row(
             children: <Widget>[
-              // Vermelho - Esquerda
               Container(
-                width: 156,
-                height: 800,
+                width: 80,
+                height: double.infinity,
                 color: Colors.red,
               ),
-      
-
-              // Verde - Meio
               Container(
-                width:  300,
-                height: 800,
+                width: 300,
+                height: double.infinity,
                 color: Colors.green,
               ),
-              Spacer(),
-              // Azul - Direita
-              Container(
-                width: 910,
-                height: 800,
-                color: Colors.blue,
+              Expanded(
+                child: Container(
+                  height: double.infinity,
+                  color: const Color.fromARGB(255, 47, 52, 55),
+                ),
               ),
             ],
           ),
